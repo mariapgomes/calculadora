@@ -4,51 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calc Calculadora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oregano&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
 
+
 </head>
 <body>
-  <header>
-    <h1>Calc Calculadora</h1>
-  </header>
-  <main>
-    <section>
-      <div class="visor">
-        <input type="tel" value="">
-      </div>
-
-      <div class="botoes">
-        <form action="">
-          <input type="button" value="AC">
-          <input type="button" value="( )">
-          <input type="button" value="%">
-          <input type="button" value="/">
-
-          <input type="button" value="7">
-          <input type="button" value="8">
-          <input type="button" value="9">
-          <input type="button" value="X">
-
-          <input type="button" value="4">
-          <input type="button" value="5">
-          <input type="button" value="6">
-          <input type="button" value="-">
-
-          <input type="button" value="1">
-          <input type="button" value="2">
-          <input type="button" value="3">
-          <input type="button" value="+">
-
-          <input type="button" value="0">
-          <input type="button" value=",">
-          <input type="button" value="⌫">
-          <input type="button" value="=">
-
-        </form>
-      </div>
-    </section>
-  </main>
+  <div class="background">
+    <header>
+      <h1>Calc Calculadora</h1>
+    </header>
+    <main>
+      <section id="calculadora">
+        <div class="visor">
+          <input type="tel" value="">
+        </div>
+  
+        <div class="botoes">
+          <form action="">
+            <input type="button" value="AC">
+            <input type="button" value="( )">
+            <input type="button" value="%">
+            <input type="button" value="/">
+  
+            <input type="button" value="7" class="btn-numerico">
+            <input type="button" value="8" class="btn-numerico">
+            <input type="button" value="9" class="btn-numerico">
+            <input type="button" value="X">
+  
+            <input type="button" value="4" class="btn-numerico">
+            <input type="button" value="5" class="btn-numerico">
+            <input type="button" value="6" class="btn-numerico">
+            <input type="button" value="-">
+  
+            <input type="button" value="1" class="btn-numerico">
+            <input type="button" value="2" class="btn-numerico">
+            <input type="button" value="3" class="btn-numerico">
+            <input type="button" value="+">
+  
+            <input type="button" value="0" class="btn-numerico">
+            <input type="button" value="," class="btn-numerico">
+            <input type="button" value="⌫" class="btn-numerico">
+            <input type="button" value="=" class="btn-igual">
+  
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
   <script src="./js/main.js"></script>
 </body>
 </html>

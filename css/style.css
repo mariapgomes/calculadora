@@ -1,0 +1,69 @@
+body {
+  background: black;
+}
+
+.background {
+  background: radial-gradient(191.10% 119.83% at 5.49% 7.96%, rgba(0, 0, 0, 0.23) 1.26%, rgba(122, 23, 215, 0.23) 19.73%, rgba(149, 29, 199, 0.27) 36.83%, rgba(251, 53, 136, 0.44) 66.38%, rgba(251, 53, 136, 0.27) 84.15%, rgba(0, 0, 0, 0.31) 100%);
+  height: 100vh;
+}
+
+h1 {
+  color: #F6F6F6;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 64px;
+  font-family: 'Oregano', sans-serif; 
+  text-shadow: 3px 6px 6px 0px rgba(49, 9, 60, 0.30);
+}
+
+#calculadora {
+  max-width: 31.25rem;
+  height: 49rem;
+  border-radius: 1.25rem;
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0.15) 26.91%, rgba(217, 217, 217, 0.06) 100%);
+  box-shadow: 4px 6px 4px 0px rgba(0, 0, 0, 0.10);
+  margin: 0 auto;
+}
+
+.visor input {
+  width: 100%;
+  height: 15rem; 
+  border-radius: 1.25rem 1.25rem 3.125rem 3.125rem;
+  background: #31093C;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(4, min-content);
+  gap: 1.5rem;
+  width: min-content;
+  margin: 1.5rem auto;
+}
+
+.botoes input {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 1.25rem;
+  background: #330460;
+  box-shadow: 2px 4px 3px 0px rgba(0, 0, 0, 0.25); 
+  font-family:'Roboto', sans-serif;
+  font-size: 36px;
+  color: #F6F6F6;
+  transition: .3s;
+}
+
+.botoes input:hover {
+  box-shadow: 4px 5px 4px 0px rgba(0, 0, 0, 0.25); 
+}
+
+.botoes input:active {
+  box-shadow: none; 
+}
+
+.btn-numerico {
+  background-color: #7E66B8 !important;
+}
+
+.btn-igual {
+  background-color: #FB3588 !important;
+}
