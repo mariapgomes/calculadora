@@ -25,11 +25,34 @@ h1 {
   margin: 0 auto;
 }
 
-.visor input {
+.visor {
   width: 100%;
   height: 15rem; 
   border-radius: 1.25rem 1.25rem 3.125rem 3.125rem;
   background: #31093C;
+  font-family:'Roboto', sans-serif;
+  font-size: 64px;
+  color: #F6F6F6;
+  text-align: end;
+  display: grid;
+  padding: 0 43px;
+}
+
+.visor input{
+  width: 100%;
+  background: transparent;
+  font-family:'Roboto', sans-serif;
+  font-size: 64px;
+  color: #F6F6F6;
+  text-align: end;
+}
+
+.separador {
+  border-bottom: 1px solid #F6F6F6;
+}
+
+.resultado {
+  align-self: center;
 }
 
 form {
