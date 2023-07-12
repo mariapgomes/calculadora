@@ -13,4 +13,26 @@ function triagemDeBotoes(event) {
   }
 }
 
+function montaExpressao(btn) {
+  
+  if(+btn || btn === '0') {
+    expressao += btn;
+
+  }else if(typeof btn === 'string' & btn !== '=' & btn !== '( )') {
+    expressao += ' ' + btn + ' ';
+
+  }else if(btn === '( )') {
+    if(expressao.includes('(')) {
+      expressao += ')'
+    } else {
+      expressao += '('
+    }
+  }else {
+    resultado(expressao);
+    expressao += ' ='
+  }
+
+  visorEspressao.value = expressao;
+}
+
 botoes.forEach((btn) => btn.addEventListener('click', triagemDeBotoes));
