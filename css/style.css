@@ -45,6 +45,11 @@ h1 {
   font-size: 64px;
   color: #F6F6F6;
   text-align: end;
+  transition: .3s;
+}
+
+.f34 {
+  font-size: 34px !important;
 }
 
 .separador {

@@ -18,7 +18,7 @@ function montaExpressao(btn) {
   if(+btn || btn === '0') {
     expressao += btn;
 
-  }else if(typeof btn === 'string' & btn !== '=' & btn !== '( )') {
+  }else if(typeof btn === 'string' & btn !== '=' & btn !== '( )' & btn !== '.') {
     expressao += ' ' + btn + ' ';
 
   }else if(btn === '( )') {
@@ -27,12 +27,19 @@ function montaExpressao(btn) {
     } else {
       expressao += '('
     }
+  }else if(btn === '.') {
+    expressao += btn;
   }else {
     resultado(expressao);
     expressao += ' ='
   }
 
+  if(expressao.length >= 15){
+    visorEspressao.classList.add('f34');
+  }
+
   visorEspressao.value = expressao;
+  
 }
 
 function apagador(btn) {
@@ -41,6 +48,7 @@ function apagador(btn) {
   if(btn === 'AC') {
     expressao = '';
     visorEspressao.value = '';
+    visorEspressao.classList.remove('f34');
     visorEspressao.classList.remove('separador');
   
   
@@ -59,4 +67,3 @@ function apagador(btn) {
   }
 }
 
-botoes.forEach((btn) => btn.addEventListener('click', triagemDeBotoes));
