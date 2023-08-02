@@ -95,3 +95,45 @@ form {
 .btn-igual {
   background-color: #FB3588 !important;
 }
+
+@media (max-width: 550px) {
+  main {
+    align-self: center;
+  }
+  h1 {
+    font-size: 36px;
+  }
+
+  #calculadora {
+    max-width: 280px;
+    height: 470px;
+  }
+
+  .visor {
+    height: 160px; 
+    font-size: 28px;
+    padding: 0 35px;
+    border-radius: 1.25rem 1.25rem 1.5625rem 1.5625rem;
+  }
+
+  .visor input{
+    font-size: 28px;
+  }
+
+  .f34 {
+    font-size: 16px !important;
+  }
+
+  form {
+    gap: 16px;
+    margin: 16px auto;
+  }
+
+  .botoes input {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+
+}
