@@ -16,6 +16,10 @@ function apagador(btn) {
     expressao = expressao.slice(0, visorEspressao.value.length-1);
     visorEspressao.value = expressao;
 
+    if (visorEspressao.classList.contains('f34')) {
+      visorEspressao.classList.remove('f34');
+    }
+
     if(visorResultado) {
       expressao = expressao.slice(0, visorEspressao.value.length-1)
       visorEspressao.value = expressao;
