@@ -17,6 +17,8 @@ function apagador(btn) {
     visorEspressao.value = expressao;
 
     if(visorResultado) {
+      expressao = expressao.slice(0, visorEspressao.value.length-1)
+      visorEspressao.value = expressao;
       visorEspressao.classList.remove('separador');
       visor.removeChild(visorResultado);
     }
